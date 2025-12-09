@@ -1,28 +1,103 @@
-body{
+body {
     background-color: rgb(107, 103, 103);
     font: normal 15pt Arial;
+    margin: 0;
+    padding: 0;
 }
 
-header{
+/* Centralização do conteúdo */
+header {
     color: white;
     text-align: center;
 }
 
-main{
+main {
     background-color: white;
     border-radius: 10px;
-    padding: 15px;
-    width: 550px;
-    margin: auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 550px;
+    margin: 20px auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
 }
 
-select#lista{
-    width: 150px;
+/* Ajustes gerais */
+main div input[type="number"] {
+    width: 120px;
+    padding: 5px;
+    font-size: 14pt;
 }
 
-footer{
+main div input[type="button"] {
+    padding: 5px 10px;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+select#lista {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+/* Ajuste do resultado */
+#res {
+    margin-top: 15px;
+    font-size: 14pt;
+}
+
+/* Rodapé */
+footer {
     color: white;
     text-align: center;
     font-style: italic;
+    margin-top: 20px;
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+@media (max-width: 600px) {
+    body {
+        font-size: 14pt;
+    }
+
+    main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    main div input[type="number"] {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    main div input[type="button"] {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    select#lista {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #res {
+        font-size: 14pt;
+    }
+}
+
+/* Tablets e telas médias (entre 600 e 900px) */
+@media (min-width: 600px) and (max-width: 900px) {
+    main {
+        width: 80%;
+    }
+
+    select#lista {
+        max-width: 250px;
+    }
 }
