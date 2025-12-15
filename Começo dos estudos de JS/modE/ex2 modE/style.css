@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(132, 184, 201);
+    font: normal 20pt Arial;
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+main {
+    background-color: white;
+    width: 550px;
+    border-radius: 15px;
+    margin: auto;
+    padding: 25px;
+}
+
+select {
+    margin: 10px;
+    width: 200px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
